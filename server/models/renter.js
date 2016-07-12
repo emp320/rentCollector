@@ -13,7 +13,7 @@ const renterSchema = new Schema({
  // Apartment.findById(this.apartment)
  //   .populate('renters')
  //   .lean(true)
- //   .exec(function (err, apartment) {
+ //   .exec( (err, apartment) => {
  //     if (err) return cb(500, err);
  //     if (!apartment) return cb(404, {
   //      message: 'no apartment found for ID ' + this.apartment
