@@ -42,22 +42,6 @@ router.delete('/:id', paramsValidator, (req, res) => {
 });
 
 // pay rent
-// router.put('/:id/pay', paramsValidator, (req, res) => {
-//   Apartment.find({ renter: req.params.id }, (err, apt) => {
-//     if (apt) { apt.collectedRent += apt.rent; console.log(apt); }
-//     else { res.send('APT NOT FOUND!'); return;}
-//
-//     apt.save((errSave) => {
-//       if (errSave) {
-//          console.log('PAID RENT');
-//         res.send('EXCEPTION: PAY RENT FAILED!');
-//       } else {
-//         console.log('RENT PAY FAILED! Errors:', err );
-//         res.send('SUCCESS: RENT PAID!');
-//       }
-//     });
-//   });
-// });
 
 
 // update
