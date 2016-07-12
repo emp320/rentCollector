@@ -1,0 +1,30 @@
+[
+  {
+      "_id": { "$oid": "012345678901234567891012" },
+      "name" : "a1",
+      "sqft" : 2240,
+      "floor" : 4,
+      "rent" : 5500,
+      "collectedRent" : 0,
+      "bedrooms" : 1,
+      "__v" : 0
+  },
+  {
+    "_id": { "$oid": "012345678901234567891013" },
+    "name" : "a1",
+    "sqft" : 1250,
+    "floor" : 1,
+    "rent" : 2500,
+    "collectedRent" : 0,
+    "bedrooms" : 1
+},
+{
+    "_id": { "$oid": "012345678901234567891014" },
+    "name" : "a1",
+    "sqft" : 2240,
+    "floor" : 2,
+    "rent" : 3500,
+    "collectedRent" : 0,
+    "bedrooms" : 1
+}
+]
