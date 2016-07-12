@@ -2,6 +2,7 @@
 
 import express from 'express';
 import Renter from '../models/renter';
+import Apartment from '../models/apartment';
 import bodyValidator from '../validators/renters/body';
 // import queryValidator from '../validators/bookmarks/query';
 import paramsValidator from '../validators/renters/params';
@@ -41,13 +42,23 @@ router.delete('/:id', paramsValidator, (req, res) => {
 });
 
 // pay rent
-router.put('/:id/pay', paramsValidator, (req, res) => {
-    Renter.findById(req.params.id, (err, renter) => {
-      renter.pay( (status) => {
-        res.send( {status} );
-      });
-    });
-  });
+// router.put('/:id/pay', paramsValidator, (req, res) => {
+//   Apartment.find({ renter: req.params.id }, (err, apt) => {
+//     if (apt) { apt.collectedRent += apt.rent; console.log(apt); }
+//     else { res.send('APT NOT FOUND!'); return;}
+//
+//     apt.save((errSave) => {
+//       if (errSave) {
+//          console.log('PAID RENT');
+//         res.send('EXCEPTION: PAY RENT FAILED!');
+//       } else {
+//         console.log('RENT PAY FAILED! Errors:', err );
+//         res.send('SUCCESS: RENT PAID!');
+//       }
+//     });
+//   });
+// });
+
 
 // update
 router.put('/:id', paramsValidator, (req, res) => {

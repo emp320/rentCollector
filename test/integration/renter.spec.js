@@ -220,17 +220,17 @@ describe('Renter', () => {
     });
   });
 
-  describe('put /renters/:id/pay - pay rent!', () => {
-    it('should pay rent', (done) => {
-      request(app)
-      .put('/renters/012345678901234567890011/pay')
-      .end((err, rsp) => {
-        expect(err).to.be.null;
-        expect(rsp.status).to.equal(200);
-        expect(rsp.body.status).to.equal('SUCCESS: RENT PAID!');
-        done();
-      });
-    });
-  });
+  // describe('put /renters/:id/pay - pay rent!', () => {
+  //   it('should pay rent', (done) => {
+  //     request(app)
+  //     .put('/renters/012345678901234567890011/pay')
+  //     .end((err, rsp) => {
+  //       expect(err).to.be.null;
+  //       expect(rsp.status).to.equal(200);
+  //       expect(rsp.body.status).to.equal('SUCCESS: RENT PAID!');
+  //       done();
+  //     });
+  //   });
+  // });
 
 });
